@@ -1,4 +1,4 @@
-rasa==3.6.5
+rasa==3.6.2
 rasa-sdk==3.6.2
 python-engineio==4.8.0
 python-socketio==5.8.0
