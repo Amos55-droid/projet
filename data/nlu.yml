@@ -1,0 +1,228 @@
+version: "3.1"
+
+nlu:
+- intent: salut
+  examples: |
+    - bonjour
+    - salut
+    - hello
+    - bonsoir
+    - cc bro
+    - coucou
+
+- intent: au_revoir
+  examples: |
+    - au revoir
+    - à bientôt
+    - bye
+    - ciao
+    - à plus
+    - à plus tard 
+    - j'arrive d'abord
+    - je te reviens
+
+- intent: affirm
+  examples: |
+    - oui
+    - oui s'il vous plaît
+    - yes
+    - bien sûr
+    - oui,je veux
+
+- intent: deny
+  examples: |
+    - non
+    - pas maintenant
+    - non merci
+    - je veux pas
+
+- intent: confirme
+  examples: | 
+    - tout à fait
+    - exactement
+    - normal
+    - bien 
+    - bon
+    - effectivement
+
+- intent: doute
+  examples: |
+    - pas du tout
+    - je ne pense pas
+    - je doute 
+    - tu mens 
+    - c'est faux 
+    - c'est pas ça
+
+- intent: remerciements
+  examples: |
+    - merci 
+    - merci beaucoup
+    - merci bien
+    - merci bro     
+    - tu es bon 
+    - thanks you
+    - thank
+
+- intent: satisfaire 
+  examples: |
+    - je t'en prie   
+    - je t'en prie bro
+    - voilà
+    - je t'aime
+    - tu as raison
+   
+- intent: donner_symptomes
+  examples: |
+    - j'ai mal à la tête
+    - je tousse beaucoup
+    - j'ai de la fièvre
+    - j'ai mal à la gorge
+    - j’ai mal au ventre
+    - je ressens des douleurs au dos
+    - j'ai les maux de ventre
+
+- intent: demander_maladie
+  examples: |
+    - quelle maladie est-ce ?
+    - c’est quelle maladie ?
+    - tu peux me dire ce que j’ai ?
+
+- intent: demander_hopital
+  examples: |
+    - où se trouve l'hôpital ?
+    - donne-moi un hôpital
+    - je veux aller à l'hôpital
+    - quel hôpital je peux aller ?
+    - je cherche un hôpital
+    - hôpital stp 
+    - svp hôpital 
+    - hôpital ?
+
+- intent: demander_medicament_sans_préciser
+  examples: |
+    - quels médicaments je peux prendre?
+    - donne-moi les médicaments 
+    - quels sont les médicaments?
+    - médicaments pour se traiter 
+    - quel comprimé je dois prendre?
+    - je veux les comprimés pour ma maladie
+    - les médicaments stp
+    - médicament
+    - comprimés 
+
+- intent: demander_medicament
+  examples: |
+    - quels médicaments je peux prendre pour [paludisme](maladie)?
+    - donne-moi les médicaments de la [typhoïde](maladie)
+    - quels sont les médicaments de la [grippe](maladie)?
+    - médicaments pour traiter la [dengue](maladie)
+    - quel comprimé je dois prendre pour [tuberculose](maladie)
+    
+- intent: donner_maladie
+  examples: |
+    - pour paludisme
+    - l'hypertension
+    - otite
+    - VIH-SIDA
+    - la diarhée
+    - palu
+    - j'ai de la dengue
+    - je souffre de la tuberculose
+    - je suis malade de la téphoÏde
+    - c'est pour la grippe
+    - et pour le cancer? 
+
+- intent: inform_lieu
+  examples: |
+    - Je suis à Cotonou
+    - Dans le village Adjara
+    - J'habite à Porto-Novo
+    - Je suis dans le quartier Akpakpa
+    - A Calavi
+    - Parakou    
+
+- intent: reaction_humaine
+  examples: |
+    - hum
+    - hein
+    - bref
+    - ah bon
+    - ok
+    - mmh
+    - ouais
+    - ah d'accord
+    - eh bien
+    - eh oui
+    - ah oui
+    - ah ok
+    - ouh
+    - hmm
+    - ahah
+    - lol
+    - ahhh
+    - haha    
+
+- intent: insult
+  examples: |
+    - tu es nul
+    - t con
+    - connard
+    - conn@rd
+    - con
+    - c*n
+    - idiot
+    - imbécile
+    - va te faire voir
+    - sale fou
+    - crétin
+    - enfoiré
+    - espèce de nul
+    - imbécile heureux
+    - trou du cul
+    - bâtard
+    - btard
+    - tu me saoules
+    - stupide
+    - tocard
+    - tête de mule
+    - gros naze
+    - n@ze
+    - laisse moi
+    - tu es malade?
+    - ça va pas chez toi?
+    - tu ne connais rien
+
+- intent: sad
+  examples: |
+    - je suis triste 
+    - ça va pas 
+    - je me sens mal 
+    - déprimé 
+
+- intent: happy
+  examples: |
+    - je suis content 😀
+    - ça va bien 😄
+    - je suis heureux 😁
+    - trop bien 😆
+    - je vais bien aujourd'hui
+    - je suis dejà en forme
+
+- intent: angry
+  examples: |
+    - je suis énervé 
+    - colère 
+    - ça m'énerve 
+    - tu n'es pas gentil
+
+- intent: ask_identity
+  examples: |
+    - Qui es-tu ?
+    - Tu es qui ?
+    - C'est quoi ton rôle ?
+    - Dis-moi qui tu es
+    - Présente-toi
+    - Qui es-tu exactement ?
+    - Parle-moi de toi
+    - faut te presenter d'abord

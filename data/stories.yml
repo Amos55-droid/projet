@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: Conversation de bienvenue
+  steps:
+    - intent: salut
+    - action: action_verifier_limite_messages
+    - action: utter_salut
+    - action: action_incrementer_messages
+
+- story: Dire au revoir
+  steps:
+    - intent: au_revoir
+    - action: action_verifier_limite_messages
+    - action: utter_au_revoir
+    - action: action_incrementer_messages
+
+- story: Symptômes de maladie
+  steps:
+    - intent: donner_symptomes
+    - action: action_verifier_limite_messages
+    - action: action_diagnostiquer_maladie
+    - action: action_incrementer_messages
+
+- story: Demander de médicaments avec maladie directe 
+  steps:
+    - intent: demander_medicament
+    - action: action_verifier_limite_messages
+    - action: action_fournir_medicaments_et_conseils_maladie
+    - action: action_incrementer_messages
+
+- story: médicament sans préciser maladie, puis précise après
+  steps: 
+    - intent: demander_medicament_sans_préciser
+    - action: action_verifier_limite_messages
+    - action: utter_demander_maladie
+    - action: action_incrementer_messages
+    - intent: donner_maladie 
+    - action: action_verifier_limite_messages
+    - action: action_fournir_medicaments_et_conseils_maladie
+    - action: action_incrementer_messages
+
+- story: les symptômes n'ont pas pu être identifier
+  steps:
+    - intent: analyser_maladie
+    - action: action_verifier_limite_messages
+    - action: utter_aucun_diagnostic
+    - action: action_incrementer_messages 
+
+- story: demande hopital proche par lieu
+  steps:
+  - intent: demander_hopital
+  - action: action_verifier_limite_messages
+  - action: utter_demander_lieu
+  - action: action_incrementer_messages 
+  - intent: inform_lieu
+  - action: action_verifier_limite_messages
+  - action: action_hopital_proche_par_lieu
+  - action: action_incrementer_messages      

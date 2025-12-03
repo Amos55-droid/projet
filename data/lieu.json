@@ -1,0 +1,216 @@
+{
+  "cotonou": [
+    "Centre National Hospitalier Universitaire Hubert Koutoukou Maga",
+    "Clinique Mahouna",
+    "Clinique La Vie",
+    "Centre de santé de Zogbo"
+  ],
+  "porto-novo": [
+    "Centre Hospitalier Départemental Ouémé-Plateau",
+    "Clinique la Grâce",
+    "Centre de santé Sègbèya"
+  ],
+  "parakou": [
+    "Centre Hospitalier Universitaire Départemental de Borgou",
+    "Clinique Al-Baraka",
+    "Centre de santé de Zongo"
+  ],
+  "tchatchou": [
+    "Centre de santé de Tchatchou",
+    "Infirmerie Communautaire de Tchatchou"
+  ],
+  "tekparou": [
+    "Centre de santé de Tèkparou",
+    "Poste de santé de Tèkparou"
+  ],
+  "n'dali": [
+    "Centre de santé de N'Dali",
+    "Hôpital de zone de N'Dali",
+    "Clinique de l’Espérance"
+  ],
+  "banikoara": [
+    "Hôpital de zone de Banikoara",
+    "Centre médical de Banikoara"
+  ],
+  "bembereke": [
+    "Hôpital de zone de Bembèrèkè",
+    "Centre de santé de Bembèrèkè"
+  ],
+  "tchaourou": [
+    "Centre de santé de Tchaourou",
+    "Hôpital Saint Joseph de Tchaourou"
+  ],
+  "djougou": [
+    "Centre Hospitalier Départemental de la Donga",
+    "Centre de santé Camp militaire de Djougou"
+  ],
+  "natitingou": [
+    "Centre Hospitalier Départemental de l’Atacora",
+    "Centre de santé de Natitingou",
+    "Clinique Notre Dame de Natitingou"
+  ],
+  "kandi": [
+    "Hôpital de zone de Kandi",
+    "Centre de santé Saka-Kandi"
+  ],
+  "abomey": [
+    "Centre Hospitalier Départemental du Zou",
+    "Clinique Pépé",
+    "Centre de santé Bohicon-Abomey"
+  ],
+  "bohicon": [
+    "Clinique Le Pardon",
+    "Centre de santé Bohicon",
+    "Clinique Le Destin"
+  ],
+  "lokossa": [
+    "Hôpital de zone de Lokossa",
+    "Centre de santé Sè",
+    "Centre de santé Agamé"
+  ],
+  "come": [
+    "Centre hospitalier de Comé",
+    "Centre de santé d'Adjaha"
+  ],
+  "ketou": [
+    "Centre de santé de Kétou",
+    "Hôpital de zone de Kétou"
+  ],
+  "pobe": [
+    "Centre de santé de Pobè",
+    "Clinique Chrétiens de Pobè"
+  ],
+  "goro": [
+    "Centre de santé de Goro"
+  ],
+  "alafiarou": [
+    "Centre de santé d'Alafiarou"
+  ],
+  "beterou": [
+    "Centre de santé de Bétérou"
+  ],
+  "sanson": [
+    "Centre de santé de Sanson"
+  ],
+  "kika": [
+    "Centre de santé de Kika"
+  ],
+  "banigri": [
+    "Centre de santé de Banigri"
+  ],
+  "papané": [
+    "Centre hospitalier de Papané (Hôpital de zone)"
+  ],
+  "boukousséra": [
+    "Centre de santé de Boukousséra"
+  ],
+  "perma": [
+    "Centre de santé du village de Perma",
+    "Poste médical de Perma"
+  ],
+  "kouandata": [
+    "Centre de santé de Kouandata",
+    "Poste de santé de Kouandata"
+  ],
+  "tchoumi-tchoumi": [
+    "Centre de santé de Tchoumi-Tchoumi"
+  ],
+  "kouaba": [
+    "Centre de santé de Kouaba",
+    "Poste de santé de Kouaba"
+  ],
+  "peporiyakou": [
+    "Centre de santé de Péporiyakou"
+  ],
+  "tchoumi tchoumi": [
+    "Centre de santé de Tchoumi-Tchoumi"
+  ],
+  "albarika": ["Centre de santé Albarika"],
+  "boundarou": ["Centre de santé Boundarou"],
+  "camp adagbe": ["Poste médical Camp Adagbè"],
+  "kpebie": ["Centre de santé Kpébié"],
+  "sinangourou": ["Centre de santé Sinangourou"],
+  "banikani": ["Centre de santé Banikani"],
+  "ladji farani": ["Centre de santé Ladji Farani"],
+  "tranza": ["Centre de santé Tranza"],
+  "nikkikperou": ["Centre de santé Nikkikpérou"],
+  "agbokpa": [
+    "Centre de santé d’Agbokpa"
+  ],
+  "detohonou": [
+    "Poste médical de Détohonou"
+  ],
+  "djègbé": [
+    "Centre de santé de Djègbé"
+  ],
+  "hounli": [
+    "Centre de santé de Hounli"
+  ],
+  "sèhoun": [
+    "Centre de santé de Sèhoun"
+  ],
+  "vidolé": [
+    "Poste de santé de Vidolé"
+  ],
+  "zounzounmè": [
+    "Centre de santé de Zounzounmè"
+  ],
+  "calavi": [
+    "Centre de santé communautaire de Calavi"
+  ],
+  "tankpe": [
+    "Centre de santé de Tankpè"
+  ],
+  "zopah": [
+    "Centre de santé de Zopah"
+  ],
+  "godomey": [
+    "Centre de santé de Godomey",
+    "Clinique municipale de Godomey"
+  ],
+  "akassato": [
+    "Centre de santé d’Akassato"
+  ],
+  "glo-djigbe": [
+    "Centre de santé de Glo‑Djigbé"
+  ],
+  "hevievie": [
+    "Centre de santé de Hêvié"
+  ],
+  "kpanroun": [
+    "Centre de santé de Kpanroun"
+  ],
+  "ouedo": [
+    "Centre de santé d’Ouèdo"
+  ],
+  "togba": [
+    "Centre de santé de Togba"
+  ],
+  "zinvie": [
+    "Centre de santé de Zinvié"
+  ],
+  "togbin-daho": [
+    "Poste de santé de Togbin‑Daho"
+  ],
+  "dandji": ["Centre de santé de Dandji"],
+  "donatin": ["Centre de santé de Donatin"],
+  "finagnon": ["Centre médical de Finagnon"],
+  "ahouassa": ["Poste de santé de Ahouassa"],
+  "adjegounle": ["Centre de santé d’Adjégounlé"],
+  "abokicodji": ["Centre de santé d’Abokicodji"],
+  "dedokpo": ["Centre de santé de Dédokpo"],
+  "wlacodji": ["Centre de santé de Wlacodji"],
+  "aidjedo": ["Poste de santé d’Aïdjedo"],
+  "dagbedji": ["Centre de santé de Dagbédji"],
+  "agbodjedo": ["Centre de santé d’Agbodjedo"],
+  "kouhounou": ["Poste de santé de Kouhounou"],
+  "cadjehoun": ["Centre de santé de Cadjèhoun"],
+  "cocotier": ["Poste médical de Cocotier"],
+  "fidjrosse": ["Clinique de Fidjrosse"],
+  "alada":["centre de santé d'Alada"],
+  "toÏ":["centre de santé de ToÏ"]
+}
+
+
+
+

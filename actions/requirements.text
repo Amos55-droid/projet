@@ -1,0 +1,18 @@
+# Rasa Core et SDK
+rasa==3.5.0
+rasa-sdk==3.1.0
+
+# Pour la connexion Firebase / Firestore
+firebase-admin==6.0.1
+
+# Pour gérer les requêtes HTTP (Paydunya, API, etc.)
+requests==2.31.0
+
+# Pour l'analyse et nettoyage de texte
+regex==2025.8.15
+
+# Pour manipuler les fichiers .env
+python-dotenv==1.0.1
+
+# Autres dépendances utiles pour ton bot
+typing-extensions==4.9.0

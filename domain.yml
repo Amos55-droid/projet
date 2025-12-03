@@ -1,0 +1,167 @@
+version: "3.1"
+
+intents:
+  - donner_symptomes
+  - demander_maladie
+  - demander_hopital
+  - analyser_maladie
+  - demander_medicament
+  - demander_medicament_maladie
+  - demander_medicament_sans_préciser
+  - inform_lieu
+  - inform_maladie
+  - nombre_messages_discuter
+  - reaction_humaine
+  - donner_maladie
+  - doute_conversation
+  - salut
+  - au_revoir
+  - affirm
+  - deny
+  - confirme
+  - doute
+  - remerciements
+  - satisfaire
+  - restart
+  - nlu_fallback
+  - insult
+  - sad
+  - happy
+  - angry
+  - ask-indentity
+
+entities:
+  - symptome
+  - maladie
+  - localisation
+  - lieu
+  - conseil
+  - demande_en_cours
+
+slots:
+  nb_messages:
+    type: float
+    initial_value: 0
+    mappings:
+      - type: custom
+
+  symptomes:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+
+  maladie:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  demande_en_cours:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  
+  diagnostic:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  medicaments:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  lieu:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+  
+  conseil:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text    
+
+responses:
+  utter_salut:
+    - text: "Bonjour ! Je suis votre assistant santé. Quels sont vos symptômes ?"
+    - text: "Salut ! Je suis ton ami de santé virtuel. Quels sont tes problèmes de santé?"
+
+  utter_au_revoir:
+    - text: "Merci, à bientôt et prenez soin de votre santé !"
+    - text: "Si la maladie persiste n'hésitez pas de vous rendre à l'hôpital pour traitement,prenez bien soin de vous"
+  
+  utter_confirme:
+    - text: "Bien. Avez-vous d'autres questons sur la santé ?"
+
+  utter_doute:
+    - text: "je comprends votre frustration,avez-vous d'autres questions médicales? N'hésitez également pas de consulter un médecin professionel pour confirmation" 
+
+  utter_remerciements: 
+    - text: "Bien. Avez-vous d'autres questons sur la santé ? Les conseils pratiques que je vous ajoute après chaque médicament peuvent vous aider,appliquez-en " 
+
+  utter_satisfaire:
+    - text: "c'est avec plaisir! Je suis toujours disponible pour vos questions sur la santé(24h sur24h)😄"
+
+  utter_attente:
+    - text: "Vous avez atteint la limite de 100 messages. Veuillez patienter jusqu'àprès 2h ou passer au premium"
+
+  utter_aucun_diagnostic:
+    - text: "Je n'ai pas pu identifier une maladie avec les symptômes donnés. Pouvez-vous préciser ou ajouter d'autres symptômes ?Veillez aussi consulter un médecin pour plus de précision"
+
+  utter_demander_lieu:
+    - text: "Dans quelle ville ou village vous vous trouvez ?"
+    - text: "Peux-tu me donner ta zone de résidence pour que je puisse bien t'orienter vers un hôpital proche?"
+
+  utter_reaction_humaine:
+    - text: "Dis-moi tout,je suis ton assistant santé. Parler est un atout pour la santé tu crois pas?"
+    - text: "Ensemble pour la santé,n'hésitez jamais de discuter sur votre santé"  
+
+  utter_default:
+    - text: "Je ne suis pas sûr de bien comprendre 🤔, mais vous pouvez reformuler ou me donner plus de détails afin que je puisse mieux vous aider. symptômes avec détails ou demande de médicament détails,voir même les conseils pratiques pour la santé,je peux aider sur tout côté santé😄"
+
+  utter_insult:
+    - text: "Je comprends que tu sois contrarié 😌💙. Mais parlons calmement, c’est meilleur pour ta santé 🌿."
+    - text: "La colère peut fatiguer ton cœur 💖. Respirons un peu et discutons sereinement 🌱."
+    - text: "Je suis là pour t’aider 🩺😊, même si tu es fâché. On peut trouver une solution."
+
+  utter_sad:
+    - text: "Je suis désolé que tu te sentes mal 😔💙. Si tu veux, je peux te donner quelques liste de médicaments,dis-moi juste ta maladie 🌿."
+    - text: "Courage 💪💙. Parler aide souvent à se sentir mieux. Je t’écoute 🩺."
+    - text: "Les moments difficiles arrivent, mais ils passent toujours 🌤️💙. Dis-moi ce qui ne va pas où ce qui te fait mal,je suis là pour t'aider à gérer ta santé"
+
+  utter_happy:
+    - text: "Je suis content de te voir heureux 😀💙 ! Garde ce sourire, c’est bon pour la santé 🌞."
+    - text: "Super ! Continue comme ça, le bien-être est la meilleure des préventions 🩺😄. Je peux aussi t'aider coté santé,imagine la joie + la santé 😄 "
+    - text: "La joie renforce le système immunitaire 🌿😀. Dis-moi ce qui te rend ci joyeux,je t'écoute si c'est concernant la santé on va se régaler 😊"
+
+  utter_angry:
+    - text: "Respirons profondément 😌🌿. La colère peut augmenter la tension artérielle 🩺💙."
+    - text: "Je comprends ta colère 😡, mais discutons calmement pour trouver une solution."
+    - text: "Même dans la colère, il y a un chemin vers l’apaisement 🌱💙.Le premier chemin est d'en parler,je t'écoute mon ami 🌞"      
+
+  utter_identity:
+    - text: "Bonjour ! Je suis votre assistant santé intelligent, je suis votre ami virtuel. Je suis là pour vous fournir des informations fiables sur les maladies, les symptômes, les traitements et les conseils de santé. N’hésitez pas à me poser vos questions, je vous aiderai du mieux possible."
+  
+  utter_demander_conseils_maladie:
+    - text: "Pour quelle maladie souhaitez-vous obtenir des conseils pratiques ? Soyez tranquille et parlez seulement,je suis là pour vous aider 😀"
+
+  utter_demander_maladie:
+    - text: "Pour quelle maladie souhaitez-vous connaître les médicaments ?🌞 "
+
+actions:
+  - action_diagnostiquer_maladie
+  - action_verifier_limite_messages
+  - action_incrementer_messages
+  - action_hopital_proche_par_lieu
+  - action_donner_conseils
+  - action_fournir_medicaments_et_conseils_maladie
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

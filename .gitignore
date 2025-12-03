@@ -1,0 +1,57 @@
+# --- Environnements Python ---
+venv/
+env/
+.venv/
+ENV/
+.env
+
+# --- Fichiers Python inutiles ---
+_pycache_/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+*.h5
+
+# --- Dossiers lourds Rasa / Chatbots ---
+models/
+results/
+logs/
+.history/
+.cache/
+.checkpoints/
+
+# --- Données & fichiers lourds ---
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.csv
+*.jsonl
+*.db
+*.sqlite3
+*.pt
+*.bin
+*.weights
+*.onnx
+
+# --- Node / JavaScript (si ton chatbot utilise du JS) ---
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# --- Flutter (si ton projet mélange Flutter + chatbot) ---
+build/
+.ios/
+.android/
+
+# --- Systèmes OS ---
+.DS_Store
+Thumbs.db
+
+# --- VSCode / PyCharm ---
+.vscode/
+.idea/

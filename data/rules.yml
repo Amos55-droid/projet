@@ -1,0 +1,147 @@
+version: "3.1"
+
+rules:
+  - rule: Démarrer la conversation
+    steps:
+      - intent: salut
+      - action: action_verifier_limite_messages
+      - action: utter_salut
+      - action: action_incrementer_messages
+
+  - rule: Dire au revoir
+    steps:
+      - intent: au_revoir
+      - action: action_verifier_limite_messages
+      - action: utter_au_revoir
+      - action: action_incrementer_messages
+
+  - rule: confirmer la conversation
+    steps:
+      - intent: confirme
+      - action: action_verifier_limite_messages
+      - action: utter_confirme
+      - action: action_incrementer_messages
+
+  - rule: douter de la conversation
+    steps:
+      - intent: doute_conversation
+      - action: action_verifier_limite_messages
+      - action: utter_doute
+      - action: action_incrementer_messages
+
+  - rule: remercier pour l'aide
+    steps:
+      - intent: remerciements
+      - action: action_verifier_limite_messages
+      - action: utter_remerciements
+      - action: action_incrementer_messages  
+
+  - rule: satisfaire de l'aide
+    steps:
+      - intent: satisfaire
+      - action: action_verifier_limite_messages
+      - action: utter_satisfaire
+      - action: action_incrementer_messages       
+
+  - rule: Vérifier les symptômes
+    steps:
+      - intent: donner_symptomes
+      - action: action_verifier_limite_messages
+      - action: action_diagnostiquer_maladie
+      - action: action_incrementer_messages
+
+  - rule: démander médicament sans maladie précisée
+    steps:
+    - intent: demander_medicament_sans_préciser
+    - action: action_verifier_limite_messages
+    - action: utter_demander_maladie
+    - action: action_incrementer_messages
+
+  - rule: démander médicament avec maladie précisée directement
+    steps:
+    - intent: demander_medicament
+    - action: action_verifier_limite_messages
+    - action: action_fournir_medicaments_et_conseils_maladie
+    - action: action_incrementer_messages
+  
+  - rule: fournir médicament et conseils après maladie précisée
+    steps:
+    - intent: donner_maladie
+    - action: action_verifier_limite_messages
+    - action: action_fournir_medicaments_et_conseils_maladie
+    - action: action_incrementer_messages
+
+  - rule: Demander lieu quand hopital demandé sans localisation
+    condition:
+      - slot_was_set:
+          - lieu: null
+    steps:
+      - intent: demander_hopital
+      - action: action_verifier_limite_messages
+      - action: utter_demander_lieu
+      - action: action_incrementer_messages
+
+  - rule: Répondre hopitaux proche avec lieu donné
+    steps:
+      - intent: inform_lieu
+      - action: action_verifier_limite_messages
+      - action: action_hopital_proche_par_lieu
+      - action: action_incrementer_messages
+
+  - rule: Répondre aux réactions humaines
+    steps:
+      - intent: reaction_humaine
+      - action: action_verifier_limite_messages
+      - action: utter_reaction_humaine
+      - action: action_incrementer_messages
+
+  - rule: Réponse par défaut
+    steps:
+      - intent: nlu_fallback
+      - action: action_verifier_limite_messages
+      - action: utter_default 
+      - action: action_incrementer_messages  
+
+  - rule: Répondre aux insultes
+    steps:
+    - intent: insult
+    - action: action_verifier_limite_messages
+    - action: utter_insult
+    - action: action_incrementer_messages  
+
+  - rule: Répondre à la tristesse
+    steps:
+    - intent: sad
+    - action: action_verifier_limite_messages
+    - action: utter_sad
+    - action: action_incrementer_messages
+
+  - rule: Répondre à la joie
+    steps:
+    - intent: happy
+    - action: action_verifier_limite_messages
+    - action: utter_happy
+    - action: action_incrementer_messages
+
+  - rule: Répondre à la colère
+    steps:
+    - intent: angry
+    - action: action_verifier_limite_messages
+    - action: utter_angry
+    - action: action_incrementer_messages
+
+  - rule: Respond to identity question
+    steps:
+    - intent: ask_identity
+    - action: action_verifier_limite_messages
+    - action: utter_identity
+    - action: action_incrementer_messages
+
+  - rule: Limite messages atteinte
+    condition:
+      - slot_was_set:
+        - nb_messages: 100
+    steps:
+      - intent: nombre_messages_discuter
+      - action: utter_attente
+      - action: action_incrementer_messages

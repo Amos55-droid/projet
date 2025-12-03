@@ -1,0 +1,617 @@
+{
+  "Grippe": {
+    "Maladie": "Grippe saisonnière",
+    "Médicaments": ["Paracétamol", "Ibuprofène", "Oseltamivir"],
+    "Conseils": [
+      "Se reposer",
+      "Boire beaucoup d'eau",
+      "Éviter les contacts rapprochés",
+      "Se laver fréquemment les mains"
+    ]
+  },
+  "Paludisme": {
+    "Maladie": "Paludisme",
+    "Médicaments": ["Chloroquine", "Artemether-Lumefantrine", "Quinine"],
+    "Conseils": [
+      "Utiliser des moustiquaires",
+      "Éviter l'eau stagnante",
+      "Consulter rapidement un médecin en cas de fièvre"
+    ]
+  },
+  "COVID-19": {
+    "Maladie": "COVID-19",
+    "Médicaments": ["Paracétamol", "Remdesivir (selon prescription)", "Dexaméthasone (cas sévères)"],
+    "Conseils": [
+      "Port du masque",
+      "Lavage des mains",
+      "Distanciation sociale",
+      "Vaccination"
+    ]
+  },
+  "Dengue": {
+    "Maladie": "Dengue",
+    "Médicaments": ["Paracétamol", "Hydratation intensive", "Repos"],
+    "Conseils": [
+      "Éviter les piqûres de moustiques",
+      "Éliminer les eaux stagnantes",
+      "Consulter en cas de fièvre persistante"
+    ]
+  },
+  "Tuberculose": {
+    "Maladie": "Tuberculose",
+    "Médicaments": ["Isoniazide", "Rifampicine", "Pyrazinamide", "Ethambutol"],
+    "Conseils": [
+      "Suivre le traitement complet",
+      "Éviter les contacts rapprochés non protégés",
+      "Nutrition adéquate"
+    ]
+  },
+  "Typhoïde": {
+    "Maladie": "Fièvre typhoïde",
+    "Médicaments": ["Ciprofloxacine", "Azithromycine", "Ceftriaxone"],
+    "Conseils": [
+      "Boire de l'eau potable",
+      "Se laver les mains",
+      "Éviter les aliments crus ou mal cuits"
+    ]
+  },
+  "Hépatite A": {
+    "Maladie": "Hépatite A",
+    "Médicaments": ["Repos", "Hydratation", "Paracétamol en cas de fièvre"],
+    "Conseils": [
+      "Vaccination",
+      "Bonne hygiène alimentaire",
+      "Lavage fréquent des mains"
+    ]
+  },
+  "Hépatite B": {
+    "Maladie": "Hépatite B",
+    "Médicaments": ["Tenofovir", "Entecavir", "Interféron alpha"],
+    "Conseils": [
+      "Vaccination",
+      "Éviter le partage d'aiguilles et de matériel médical non stérile"
+    ]
+  },
+  "Hépatite C": {
+    "Maladie": "Hépatite C",
+    "Médicaments": ["Sofosbuvir", "Ledipasvir", "Ribavirine"],
+    "Conseils": [
+      "Éviter le partage d'aiguilles",
+      "Dépistage régulier",
+      "Suivi médical strict"
+    ]
+  },
+  "Choléra": {
+    "Maladie": "Choléra",
+    "Médicaments": ["Réhydratation orale", "Doxycycline", "Azithromycine"],
+    "Conseils": [
+      "Boire de l'eau potable",
+      "Cuisson adéquate des aliments",
+      "Hygiène stricte"
+    ]
+  },
+  "VIH/SIDA": {
+    "Maladie": "VIH/SIDA",
+    "Médicaments": ["Ténofovir", "Emtricitabine", "Dolutégravir"],
+    "Conseils": [
+      "Pratiquer le sexe protégé",
+      "Dépistage régulier",
+      "Traitement antirétroviral suivi"
+    ]
+  },
+  "Rougeole": {
+    "Maladie": "Rougeole",
+    "Médicaments": ["Paracétamol", "Vitamine A", "Hydratation"],
+    "Conseils": [
+      "Vaccination",
+      "Isolement des cas",
+      "Éviter le contact avec les non-immunisés"
+    ]
+  },
+  "Varicelle": {
+    "Maladie": "Varicelle",
+    "Médicaments": ["Paracétamol", "Calamine lotion", "Antihistaminiques"],
+    "Conseils": [
+      "Vaccination",
+      "Éviter le grattage des boutons",
+      "Isolement des cas"
+    ]
+  },
+  "Zona": {
+    "Maladie": "Zona",
+    "Médicaments": ["Aciclovir", "Paracétamol", "Ibuprofène"],
+    "Conseils": [
+      "Vaccination possible pour les plus de 50 ans",
+      "Éviter le contact avec les personnes non immunisées"
+    ]
+  },
+  "Méningite": {
+    "Maladie": "Méningite",
+    "Médicaments": ["Ceftriaxone", "Céfotaxime", "Dexaméthasone"],
+    "Conseils": [
+      "Vaccination",
+      "Isolement en cas d’infection bactérienne",
+      "Consulter rapidement"
+    ]
+  },
+  "Otite": {
+    "Maladie": "Otite",
+    "Médicaments": ["Amoxicilline", "Paracétamol", "Ibuprofène"],
+    "Conseils": [
+      "Éviter l’eau dans l’oreille",
+      "Traiter rapidement les infections respiratoires"
+    ]
+  },
+  "Sinusite": {
+    "Maladie": "Sinusite",
+    "Médicaments": ["Amoxicilline", "Paracétamol", "Ibuprofène", "Sprays nasaux salins"],
+    "Conseils": [
+      "Hydratation",
+      "Inhalation de vapeur",
+      "Éviter l’air sec"
+    ]
+  },
+  "Angine": {
+    "Maladie": "Angine",
+    "Médicaments": ["Amoxicilline", "Paracétamol", "Ibuprofène", "Sprays antiseptiques"],
+    "Conseils": [
+      "Repos",
+      "Gargarismes à l’eau salée",
+      "Éviter le contact rapproché"
+    ]
+  },
+  "Bronchite": {
+    "Maladie": "Bronchite",
+    "Médicaments": ["Paracétamol", "Ibuprofène", "Bêta-2 agonistes inhalés (si asthme)"],
+    "Conseils": [
+      "Éviter le tabac",
+      "Bien s’hydrater",
+      "Repos suffisant"
+    ]
+  },
+  "Pneumonie": {
+    "Maladie": "Pneumonie",
+    "Médicaments": ["Amoxicilline", "Ceftriaxone", "Paracétamol", "Oxygénothérapie si nécessaire"],
+    "Conseils": [
+      "Vaccination (pneumocoque)",
+      "Éviter le tabac",
+      "Consulter rapidement en cas de fièvre et toux persistante"
+    ]
+  },
+  "Asthme": {
+    "Maladie": "Asthme",
+    "Médicaments": ["Salbutamol inhalé", "Budesonide inhalé", "Montelukast"],
+    "Conseils": [
+      "Éviter les allergènes",
+      "Suivre le plan de traitement",
+      "Avoir un inhalateur de secours"
+    ]
+  },
+  "Allergie": {
+    "Maladie": "Allergie",
+    "Médicaments": ["Antihistaminiques (Loratadine, Cétirizine)", "Corticostéroïdes locaux"],
+    "Conseils": [
+      "Éviter les allergènes connus",
+      "Consultation en cas de réaction sévère"
+    ]
+  },
+  "Diabète": {
+    "Maladie": "Diabète",
+    "Médicaments": ["Insuline", "Metformine", "Glibénclamide"],
+    "Conseils": [
+      "Surveillance de la glycémie",
+      "Alimentation équilibrée",
+      "Activité physique régulière"
+    ]
+  },
+  "Hypertension": {
+    "Maladie": "Hypertension",
+    "Médicaments": ["Amlodipine", "Losartan", "Hydrochlorothiazide"],
+    "Conseils": [
+      "Réduction du sel",
+      "Activité physique",
+      "Suivi régulier de la tension artérielle"
+    ]
+  },
+  "Infarctus": {
+    "Maladie": "Infarctus du myocarde",
+    "Médicaments": ["Aspirine", "Nitroglycérine", "Bêta-bloquants"],
+    "Conseils": [
+      "Appeler immédiatement les urgences",
+      "Éviter l’effort physique intense"
+    ]
+  },
+  "AVC": {
+    "Maladie": "Accident vasculaire cérébral",
+    "Médicaments": ["Aspirine", "Thrombolytiques (selon indication)"],
+    "Conseils": [
+      "Appeler immédiatement les urgences",
+      "Rééducation rapide"
+    ]
+  },
+  "Insuffisance rénale": {
+    "Maladie": "Insuffisance rénale",
+    "Médicaments": ["Furosemide", "Érythropoïétine", "Suppléments minéraux selon bilan"],
+    "Conseils": [
+      "Suivi néphrologique",
+      "Restriction hydrique et alimentaire selon prescription"
+    ]
+  },
+  "Appendicite": {
+    "Maladie": "Appendicite",
+    "Médicaments": ["Antibiotiques (Ceftriaxone, Metronidazole) avant chirurgie"],
+    "Conseils": [
+      "Consultation immédiate",
+      "Chirurgie souvent nécessaire"
+    ]
+  },
+  "Gastrite": {
+    "Maladie": "Gastrite",
+    "Médicaments": ["Oméprazole", "Antiacides", "Ranitidine"],
+    "Conseils": [
+      "Éviter alcool, café, repas épicés",
+      "Alimentation légère"
+    ]
+  },
+  "Ulcère gastrique": {
+    "Maladie": "Ulcère gastrique",
+    "Médicaments": ["Oméprazole", "Amoxicilline + Clarithromycine (si H. pylori)"],
+    "Conseils": [
+      "Éviter tabac et alcool",
+      "Alimentation équilibrée",
+      "Suivre le traitement complet"
+    ]
+  },
+  "Gastro-entérite": {
+    "Maladie": "Gastro-entérite",
+    "Médicaments": ["Réhydratation orale", "Paracétamol", "Loperamide (si nécessaire)"],
+    "Conseils": [
+      "Hydratation",
+      "Alimentation légère",
+      "Hygiène stricte"
+    ]
+  },
+  "Intoxication alimentaire": {
+    "Maladie": "Intoxication alimentaire",
+    "Médicaments": ["Réhydratation orale", "Paracétamol", "Antibiotiques si nécessaire selon le germe"],
+    "Conseils": [
+      "Éviter aliments suspects",
+      "Hygiène alimentaire"
+    ]
+  },
+  "Syphilis": {
+    "Maladie": "Syphilis",
+    "Médicaments": ["Benzathine pénicilline G"],
+    "Conseils": [
+      "Suivi médical",
+      "Informer les partenaires",
+      "Éviter rapports non protégés"
+    ]
+  },
+  "Gonorrhée": {
+    "Maladie": "Gonorrhée",
+    "Médicaments": ["Ceftriaxone", "Azithromycine"],
+    "Conseils": [
+      "Rapports protégés",
+      "Informer partenaires",
+      "Suivi médical"
+    ]
+  },
+  "Herpès génital": {
+    "Maladie": "Herpès génital",
+    "Médicaments": ["Aciclovir", "Valaciclovir"],
+    "Conseils": [
+      "Éviter les rapports pendant poussée",
+      "Informer partenaires"
+    ]
+  },
+  "Cystite": {
+    "Maladie": "Cystite",
+    "Médicaments": ["Nitrofurantoïne", "Fosfomycine", "Paracétamol"],
+    "Conseils": [
+      "Hydratation abondante",
+      "Uriner fréquemment",
+      "Hygiène intime"
+    ]
+  },
+  "Prostatite": {
+    "Maladie": "Prostatite",
+    "Médicaments": ["Ciprofloxacine", "Amoxicilline", "Paracétamol"],
+    "Conseils": [
+      "Hydratation",
+      "Consultation médicale",
+      "Éviter irritants urinaires"
+    ]
+  },
+  "Fièvre jaune": {
+    "Maladie": "Fièvre jaune",
+    "Médicaments": ["Repos", "Hydratation", "Paracétamol"],
+    "Conseils": [
+      "Vaccination obligatoire",
+      "Protection contre les moustiques"
+    ]
+  },
+  "Tétanos": {
+    "Maladie": "Tétanos",
+    "Médicaments": ["Antitoxine tétanique", "Méthylprednisolone", "Antibiotiques (Métronidazole)"],
+    "Conseils": [
+      "Vaccination",
+      "Soins des plaies rigoureux"
+    ]
+  },
+  "Leptospirose": {
+    "Maladie": "Leptospirose",
+    "Médicaments": ["Doxycycline", "Amoxicilline", "Hydratation"],
+    "Conseils": [
+      "Éviter eaux stagnantes contaminées",
+      "Porter bottes dans zones à risque"
+    ]
+  },
+  "Anémie": {
+    "Maladie": "Anémie",
+    "Médicaments": ["Fer oral", "Vitamine B12", "Acide folique"],
+    "Conseils": [
+      "Alimentation riche en fer et vitamines",
+      "Traitement des causes sous-jacentes"
+    ]
+  },
+  "Hypothyroïdie": {
+    "Maladie": "Hypothyroïdie",
+    "Médicaments": ["Lévothyroxine"],
+    "Conseils": [
+      "Suivi régulier de la TSH",
+      "Alimentation équilibrée"
+    ]
+  },
+  "Hyperthyroïdie": {
+    "Maladie": "Hyperthyroïdie",
+    "Médicaments": ["Méthimazole", "Propylthiouracile", "Bêta-bloquants"],
+    "Conseils": [
+      "Suivi médical strict",
+      "Éviter excès d’iode"
+    ]
+  },
+  "Migraine": {
+    "Maladie": "Migraine",
+    "Médicaments": ["Paracétamol", "Ibuprofène", "Sumatriptan"],
+    "Conseils": [
+      "Éviter déclencheurs (stress, aliments)",
+      "Repos",
+      "Hydratation"
+    ]
+  },
+  "Lombalgie": {
+    "Maladie": "Lombalgie",
+    "Médicaments": ["Paracétamol", "Ibuprofène", "Myorelaxants"],
+    "Conseils": [
+      "Repos modéré",
+      "Exercices de renforcement du dos",
+      "Posture correcte"
+    ]
+  },
+  "Arthrose": {
+    "Maladie": "Arthrose",
+    "Médicaments": ["Paracétamol", "Ibuprofène", "Suppléments de glucosamine"],
+    "Conseils": [
+      "Exercices doux",
+      "Perte de poids si nécessaire",
+      "Physiothérapie"
+  
+    ]
+  },
+  "Polyarthrite rhumatoïde": {
+    "Maladie": "Polyarthrite rhumatoïde",
+    "Médicaments": ["Méthotrexate", "Hydroxychloroquine", "Corticostéroïdes"],
+    "Conseils": [
+      "Suivi régulier",
+      "Physiothérapie",
+      "Éviter stress articulaire excessif"
+    ]
+  },
+  "Cancer du poumon": {
+    "Maladie": "Cancer du poumon",
+    "Médicaments": ["Chimiothérapie", "Immunothérapie", "Radiothérapie"],
+    "Conseils": [
+      "Éviter tabac et polluants",
+      "Suivi médical régulier",
+      "Dépistage si facteurs de risque"
+    ]
+  },
+  "Cancer du sein": {
+    "Maladie": "Cancer du sein",
+    "Médicaments": ["Chimiothérapie", "Radiothérapie", "Hormonothérapie"],
+    "Conseils": [
+      "Auto-examen régulier",
+      "Suivi médical",
+      "Dépistage par mammographie"
+    ]
+  },
+  "Cancer de la prostate": {
+    "Maladie": "Cancer de la prostate",
+    "Médicaments": ["Chimiothérapie", "Hormonothérapie", "Radiothérapie"],
+    "Conseils": [
+      "Dépistage régulier (PSA)",
+      "Suivi médical"
+    ]
+  },
+  "Dépression": {
+    "Maladie": "Dépression",
+    "Médicaments": ["Fluoxétine", "Sertraline", "Escitalopram"],
+    "Conseils": [
+      "Psychothérapie",
+      "Exercice régulier",
+      "Soutien social"
+    ]
+  },
+  "Trouble anxieux": {
+    "Maladie": "Trouble anxieux",
+    "Médicaments": ["Alprazolam (court terme)", "Sertraline", "Buspirone"],
+    "Conseils": [
+      "Techniques de relaxation",
+      "Thérapie cognitive",
+      "Hygiène du sommeil"
+    ]
+  },
+  "Grippe aviaire": {
+    "Maladie": "Grippe aviaire",
+    "Médicaments": ["Oseltamivir", "Zanamivir", "Paracétamol"],
+    "Conseils": [
+      "Éviter contact avec volailles malades",
+      "Se laver les mains régulièrement",
+      "Port de masque en zone infectée"
+    ]
+  },
+  "Mononucléose": {
+    "Maladie": "Mononucléose infectieuse",
+    "Médicaments": ["Paracétamol", "Ibuprofène", "Repos"],
+    "Conseils": [
+      "Repos complet",
+      "Hydratation",
+      "Éviter efforts physiques intenses"
+    ]
+  },
+  "Zona post-herpétique": {
+    "Maladie": "Zona post-herpétique",
+    "Médicaments": ["Aciclovir", "Paracétamol", "Gabapentine (douleur)"],
+    "Conseils": [
+      "Éviter stress",
+      "Soins de la peau",
+      "Consulter rapidement si douleur persistante"
+    ]
+  },
+  "Malaria sévère": {
+    "Maladie": "Paludisme sévère",
+    "Médicaments": ["Artemether injecté", "Quinine", "Supporte IV"],
+    "Conseils": [
+      "Hospitalisation urgente",
+      "Hydratation",
+      "Suivi médical intensif"
+    ]
+  },
+  "COVID long": {
+    "Maladie": "Syndrome post-COVID (COVID long)",
+    "Médicaments": ["Paracétamol", "Anti-inflammatoires selon prescription", "Support respiratoire si nécessaire"],
+    "Conseils": [
+      "Repos progressif",
+      "Suivi médical",
+      "Rééducation respiratoire et physique"
+    ]
+  },
+  "Fièvre de Lassa": {
+    "Maladie": "Fièvre de Lassa",
+    "Médicaments": ["Ribavirine", "Support fluidique et nutritionnel"],
+    "Conseils": [
+      "Éviter contact avec rongeurs",
+      "Isolement des malades",
+      "Hygiène stricte"
+    ]
+  },
+  "Maladie de Lyme": {
+    "Maladie": "Maladie de Lyme",
+    "Médicaments": ["Doxycycline", "Amoxicilline", "Ceftriaxone (si sévère)"],
+    "Conseils": [
+      "Éviter piqûres de tiques",
+      "Inspection de la peau après balade en forêt",
+      "Traitement précoce pour prévenir complications"
+    ]
+  },
+  "Méningite virale": {
+    "Maladie": "Méningite virale",
+    "Médicaments": ["Repos", "Hydratation", "Paracétamol pour fièvre"],
+    "Conseils": [
+      "Isolement si nécessaire",
+      "Surveillance médicale",
+      "Hydratation"
+    ]
+  },
+  "Maladie de Parkinson": {
+    "Maladie": "Maladie de Parkinson",
+    "Médicaments": ["Levodopa", "Carbidopa", "Inhibiteurs de la MAO-B"],
+    "Conseils": [
+      "Exercices physiques réguliers",
+      "Suivi neurologique",
+      "Adapter l'environnement pour réduire les chutes"
+    ]
+  },
+  "Sclérose en plaques": {
+    "Maladie": "Sclérose en plaques",
+    "Médicaments": ["Interférons bêta", "Corticostéroïdes", "Ocrelizumab"],
+    "Conseils": [
+      "Suivi médical régulier",
+      "Physiothérapie et rééducation",
+      "Éviter stress et fatigue excessive"
+    ]
+  },
+  "Maladie d’Alzheimer": {
+    "Maladie": "Maladie d’Alzheimer",
+    "Médicaments": ["Donepezil", "Rivastigmine", "Mémantine"],
+    "Conseils": [
+      "Stimulation cognitive",
+      "Environnement sécurisé",
+      "Support familial et social"
+    ]
+  },
+  "Hépatite E": {
+    "Maladie": "Hépatite E",
+    "Médicaments": ["Repos", "Hydratation", "Surveillance médicale"],
+    "Conseils": [
+      "Boire de l’eau potable",
+      "Hygiène alimentaire stricte",
+      "Éviter aliments crus ou mal cuits"
+    ]
+  },
+  "Maladie de Chagas": {
+    "Maladie": "Maladie de Chagas",
+    "Médicaments": ["Benznidazole", "Nifurtimox"],
+    "Conseils": [
+      "Prévention contre les insectes vecteurs",
+      "Suivi médical régulier",
+      "Éviter transfusions sanguines non sécurisées"
+    ]
+  },
+  "Fièvre dengue hémorragique": {
+    "Maladie": "Dengue hémorragique",
+    "Médicaments": ["Paracétamol", "Hydratation intensive", "Surveillance hospitalière"],
+    "Conseils": [
+      "Éviter automédication avec aspirine ou ibuprofène",
+      "Contrôle médical rapproché",
+      "Prévention des piqûres de moustiques"
+    ]
+  },
+  "Bronchopneumopathie chronique obstructive (BPCO)": {
+    "Maladie": "BPCO",
+    "Médicaments": ["Bronchodilatateurs", "Corticostéroïdes inhalés", "Oxygénothérapie"],
+    "Conseils": [
+      "Éviter le tabac et la pollution",
+      "Rééducation respiratoire",
+      "Vaccinations à jour (grippe, pneumocoque)"
+    ]
+  },
+  "Maladie cœliaque": {
+    "Maladie": "Maladie cœliaque",
+    "Médicaments": ["Aucun spécifique, régime sans gluten strict"],
+    "Conseils": [
+      "Éviter gluten",
+      "Surveillance nutritionnelle",
+      "Consulter diététicien"
+    ]
+  },
+  "Syndrome du côlon irritable": {
+    "Maladie": "Syndrome du côlon irritable",
+    "Médicaments": ["Antispasmodiques", "Probiotiques", "Laxatifs ou antidiarrhéiques selon symptômes"],
+    "Conseils": [
+      "Alimentation adaptée",
+      "Gestion du stress",
+      "Hydratation suffisante"
+    ]
+  },
+  "Épilepsie": {
+    "Maladie": "Épilepsie",
+    "Médicaments": ["Valproate", "Lamotrigine", "Levetiracetam"],
+    "Conseils": [
+      "Prendre les médicaments régulièrement",
+      "Éviter déclencheurs connus",
+      "Surveillance médicale"
+    ]
+  }
+}
