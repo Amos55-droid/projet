@@ -1,8 +1,12 @@
 rasa==3.5.10
-tensorflow==2.12.0
 rasa-sdk==3.5.0
+tensorflow==2.12.0
 python-engineio==4.8.0
 python-socketio==5.8.0
 Flask
-requests
+requests==2.31.0
 gunicorn
+firebase-admin==6.0.1
+regex==2025.8.15
+python-dotenv==1.0.1
+typing-extensions==4.9.0
