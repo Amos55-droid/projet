@@ -15,7 +15,6 @@ _pycache_/
 *.h5
 
 # --- Dossiers lourds Rasa / Chatbots ---
-models/
 results/
 logs/
 .history/
