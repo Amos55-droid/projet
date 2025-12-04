@@ -1,5 +1,5 @@
-# --- Image de base Rasa complète (avec Python et toutes les dépendances) ---
-FROM rasa/rasa:3.7.0-full
+# --- Image de base Rasa complète stable ---
+FROM rasa/rasa:3.6.21-full
 
 # --- Répertoire de travail ---
 WORKDIR /app
