@@ -24,7 +24,6 @@ logs/
 # --- Données & fichiers lourds ---
 *.zip
 *.tar
-*.tar.gz
 *.rar
 *.7z
 *.csv

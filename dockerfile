@@ -1,30 +1,24 @@
-FROM python:3.8-slim
+# --- Image de base Rasa complète (avec Python et toutes les dépendances) ---
+FROM rasa/rasa:3.7.0-full
 
-# Empêche les questions interactives
-ENV DEBIAN_FRONTEND=noninteractive
-
-# Installer les dépendances système minimales
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    python3-dev \
-    git \
-    gcc \
-    g++ \
-    && rm -rf /var/lib/apt/lists/*
-
+# --- Répertoire de travail ---
 WORKDIR /app
 
+# --- Copier les fichiers de dépendances pour actions ---
 COPY requirements.txt .
 
-# Installer pip + les dépendances
-RUN pip install --upgrade pip
+# --- Installer les dépendances Python pour les actions personnalisées ---
+RUN pip install --no-cache-dir --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copier tout le projet
+# --- Copier tout le projet Rasa ---
 COPY . .
 
-# Le port utilisé par Render
+# --- Définir le port utilisé par Render ---
 ENV PORT=10000
 
-# Lancer le serveur Rasa
-CMD ["rasa", "run", "--enable-api", "--port", "10000", "--cors", "*"]
+# --- Exposer le port pour Render ---
+EXPOSE 10000
+
+# --- Commande pour lancer Rasa avec API activée et CORS ouvert ---
+CMD ["rasa", "run", "--enable-api", "--port", "10000", "--cors", "*", "--model", "models/default.tar.gz"]
