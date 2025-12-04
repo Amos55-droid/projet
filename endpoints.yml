@@ -40,3 +40,6 @@ action_endpoint:
 #  username: username
 #  password: password
 #  queue: queue
+
+rest:
+  url: "0.0.0.0:5005/webhooks/rest/webhook"
