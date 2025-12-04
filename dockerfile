@@ -8,7 +8,6 @@ WORKDIR /app
 COPY requirements.txt .
 
 # --- Installer les dépendances Python pour les actions personnalisées ---
-RUN pip install --no-cache-dir --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # --- Copier tout le projet Rasa ---
