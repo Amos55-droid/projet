@@ -24,8 +24,7 @@ COPY . .
 # Fly.io impose le port 8080
 ENV PORT=8080
 
-# Rendre le port accessible
 EXPOSE 8080
 
-# Exécuter Rasa sur le bon port
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "8080", "--model", "models/default.tar.gz"]
+# ⚠ Important : ajouter --host 0.0.0.0
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "8080", "--host", "0.0.0.0", "--model", "models/default.tar.gz"]
