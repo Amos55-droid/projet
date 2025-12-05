@@ -3,7 +3,6 @@ FROM python:3.8-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Installer dépendances système
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
@@ -21,10 +20,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-# Fly.io impose le port 10000
-ENV PORT=10000
+ENV PORT=8080
+EXPOSE 8080
 
-EXPOSE 10000
-
-# ⚠ Important : ajouter --host 0.0.0.0
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "10000", "--host", "0.0.0.0", "--model", "models/default.tar.gz"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "8080", "--host", "0.0.0.0", "--model", "models/default.tar.gz"]
