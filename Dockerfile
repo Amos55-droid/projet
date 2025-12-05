@@ -21,10 +21,10 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-# Fly.io impose le port 8080
-ENV PORT=8080
+# Fly.io impose le port 10000
+ENV PORT=10000
 
-EXPOSE 8080
+EXPOSE 10000
 
 # ⚠ Important : ajouter --host 0.0.0.0
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "8080", "--host", "0.0.0.0", "--model", "models/default.tar.gz"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "10000", "--host", "0.0.0.0", "--model", "models/default.tar.gz"]
