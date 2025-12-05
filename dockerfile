@@ -28,4 +28,4 @@ ENV PORT=10000
 EXPOSE 10000
 
 # Lancer Rasa avec API activée et CORS ouvert
-CMD ["rasa", "run", "--enable-api", "--port", "10000", "--cors", "*", "--model", "models/default.tar.gz"]
+CMD ["run", "--enable-api", "--port", "10000", "--cors", "*", "--model", "models/default.tar.gz"]
