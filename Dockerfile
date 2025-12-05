@@ -1,32 +1,31 @@
-# Base image Rasa (stable)
-FROM rasa/rasa:3.6.21-full
+FROM python:3.8-slim
 
-# Set working directory
-WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# Switch to root to install system dependencies
-USER root
+# Installer dépendances système
 RUN apt-get update && apt-get install -y \
     build-essential \
+    curl \
+    git \
+    python3-dev \
     gcc \
     g++ \
-    libssl-dev \
-    libffi-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy project files first
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
 COPY . .
 
-# Install Python dependencies
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt || true
+# Fly.io impose le port 8080
+ENV PORT=8080
 
-# Expose Render port
-ENV PORT=10000
-EXPOSE 10000
+# Rendre le port accessible
+EXPOSE 8080
 
-# Disable Rasa telemetry
-ENV RASA_TELEMETRY_ENABLED=false
-
-# Run Rasa server
-CMD ["rasa", "run", "--enable-api", "--port", "10000", "--cors", "*", "--model", "models/default.tar.gz"]
+# Exécuter Rasa sur le bon port
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "8080", "--model", "models/default.tar.gz"]
